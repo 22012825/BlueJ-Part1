@@ -1,0 +1,76 @@
+TicketMachine ticketMa1 = new TicketMachine(500);
+ticketMa1.getPrice()
+    returned int 500
+ticketMa1.getBalance()
+    returned int 0
+ticketMa1.getPrice()
+    returned int 500
+ticketMa1.refundBalance()
+    returned int 0
+TicketMachine ticketMa1 = new TicketMachine(220);
+ticketMa1.getPrice()
+    returned int 220
+ticketMa1.getBalance()
+    returned int 0
+ticketMa1.insertMoney(500);
+ticketMa1.insertMoney(500);
+ticketMa1.getPrice()
+    returned int 220
+TicketMachine Aylesbury = new TicketMachine(220);
+Aylesbury.insertMoney(1000);
+TicketMachine Amersham = new TicketMachine(300);
+Amersham.insertMoney(1000);
+TicketMachine HighWycombe = new TicketMachine(330);
+HighWycombe.insertMoney(1000);
+Aylesbury.printTicket();
+##################
+# The BlueJ Line
+# Ticket
+# 220 cents.
+##################
+
+Aylesbury.refundBalance()
+    returned int 780
+Amersham.printTicket();
+##################
+# The BlueJ Line
+# Ticket
+# 300 cents.
+##################
+
+HighWycombe.printTicket();
+##################
+# The BlueJ Line
+# Ticket
+# 330 cents.
+##################
+
+Aylesbury.insertMoney(10);
+Aylesbury.insertMoney(20);
+Aylesbury.insertMoney(1);
+Aylesbury.insertMoney(2);
+Amersham.refundBalance()
+    returned int 700
+Amersham.insertMoney(10);
+Amersham.insertMoney(20);
+Amersham.insertMoney(1);
+Amersham.getPrice()
+    returned int 300
+Amersham.refundBalance()
+    returned int 31
+Amersham.refundBalance()
+    returned int 0
+Amersham.insertMoney(100);
+Amersham.insertMoney(200);
+Aylesbury.refundBalance()
+    returned int 33
+Aylesbury.insertMoney(20);
+Aylesbury.insertMoney(20);
+Aylesbury.insertMoney(100);
+Aylesbury.insertMoney(200);
+HighWycombe.insertMoney(10);
+HighWycombe.insertMoney(20);
+HighWycombe.insertMoney(100);
+HighWycombe.insertMoney(200);
+HighWycombe.getBalance()
+    returned int 1000
